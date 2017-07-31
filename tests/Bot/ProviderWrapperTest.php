@@ -3,13 +3,13 @@
 namespace Kaankilic\Pinbot\Tests\Bot;
 
 use PHPUnit\Framework\TestCase;
-use seregazhuk\PinterestBot\Api\Request;
-use seregazhuk\PinterestBot\Api\Response;
-use seregazhuk\PinterestBot\Helpers\Cookies;
-use seregazhuk\PinterestBot\Api\CurlHttpClient;
-use seregazhuk\PinterestBot\Api\ProvidersContainer;
-use seregazhuk\PinterestBot\Api\Providers\Core\Provider;
-use seregazhuk\PinterestBot\Api\Providers\Core\ProviderWrapper;
+use Kaankilic\Pinbot\Api\Request;
+use Kaankilic\Pinbot\Api\Response;
+use Kaankilic\Pinbot\Helpers\Cookies;
+use Kaankilic\Pinbot\Api\CurlHttpClient;
+use Kaankilic\Pinbot\Api\ProvidersContainer;
+use Kaankilic\Pinbot\Api\Providers\Core\Provider;
+use Kaankilic\Pinbot\Api\Providers\Core\ProviderWrapper;
 
 class ProviderWrapperTest extends TestCase
 {
@@ -17,7 +17,7 @@ class ProviderWrapperTest extends TestCase
      * For not logged in request.
      *
      * @test
-     * @expectedException \seregazhuk\PinterestBot\Exceptions\AuthRequired
+     * @expectedException \Kaankilic\Pinbot\Exceptions\AuthRequired
      */
     public function it_should_fail_when_login_is_required()
     {
@@ -34,7 +34,7 @@ class ProviderWrapperTest extends TestCase
 
     /**
      * @test
-     * @expectedException \seregazhuk\PinterestBot\Exceptions\InvalidRequest
+     * @expectedException \Kaankilic\Pinbot\Exceptions\InvalidRequest
      */
     public function it_should_throw_exception_when_calling_non_existed_method()
     {
