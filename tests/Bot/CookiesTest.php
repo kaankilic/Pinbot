@@ -1,9 +1,9 @@
 <?php
 
-namespace seregazhuk\tests\Bot\Helpers;
+namespace Kaankilic\Pinbot\Tests\Bot\Helpers;
 
 use PHPUnit_Framework_TestCase;
-use seregazhuk\tests\Helpers\CookiesHelper;
+use Kaankilic\Pinbot\Tests\Helpers\CookiesHelper;
 use Kaankilic\Pinbot\Helpers\Cookies;
 
 class CookiesTest extends PHPUnit_Framework_TestCase

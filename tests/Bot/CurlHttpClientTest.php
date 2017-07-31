@@ -1,9 +1,9 @@
 <?php
 
-namespace seregazhuk\tests\Bot;
+namespace Kaankilic\Pinbot\Tests\Bot;
 
 use PHPUnit\Framework\TestCase;
-use seregazhuk\tests\Helpers\CookiesHelper;
+use Kaankilic\Pinbot\Tests\Helpers\CookiesHelper;
 use Kaankilic\Pinbot\Helpers\Cookies;
 use Kaankilic\Pinbot\Api\CurlHttpClient;
 

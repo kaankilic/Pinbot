@@ -1,6 +1,6 @@
 <?php
 
-namespace seregazhuk\tests\Bot;
+namespace Kaankilic\Pinbot\Tests\Bot;
 
 use Mockery;
 use Mockery\MockInterface;

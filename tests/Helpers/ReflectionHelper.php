@@ -1,6 +1,6 @@
 <?php
 
-namespace seregazhuk\tests\Helpers;
+namespace Kaankilic\Pinbot\Tests\Helpers;
 
 use ReflectionClass;
 

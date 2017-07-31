@@ -1,6 +1,6 @@
 <?php
 
-namespace seregazhuk\tests\Bot\Helpers;
+namespace Kaankilic\Pinbot\Tests\Bot\Helpers;
 
 use PHPUnit\Framework\TestCase;
 use Kaankilic\Pinbot\Api\Forms\Profile;

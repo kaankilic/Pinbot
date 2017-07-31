@@ -1,12 +1,12 @@
 <?php
 
-namespace seregazhuk\tests\Bot\Api;
+namespace Kaankilic\Pinbot\Tests\Bot\Api;
 
 use Mockery;
 use PHPUnit\Framework\TestCase;
 use Kaankilic\Pinbot\Api\Request;
 use Kaankilic\Pinbot\Api\Response;
-use seregazhuk\tests\Helpers\ResponseHelper;
+use Kaankilic\Pinbot\Tests\Helpers\ResponseHelper;
 use Kaankilic\Pinbot\Api\ProvidersContainer;
 use Kaankilic\Pinbot\Api\Providers\Core\Provider;
 

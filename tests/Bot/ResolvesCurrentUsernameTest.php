@@ -1,6 +1,6 @@
 <?php
 
-namespace seregazhuk\tests\Bot\Api;
+namespace Kaankilic\Pinbot\Tests\Bot\Api;
 
 use Mockery;
 use PHPUnit\Framework\TestCase;

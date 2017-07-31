@@ -1,15 +1,15 @@
 <?php
 
-namespace seregazhuk\tests\Bot;
+namespace Kaankilic\Pinbot\Tests\Bot;
 
 use Mockery;
 use Mockery\MockInterface;
 use PHPUnit\Framework\TestCase;
 use Kaankilic\Pinbot\Api\Request;
-use seregazhuk\tests\Helpers\CookiesHelper;
+use Kaankilic\Pinbot\Tests\Helpers\CookiesHelper;
 use Kaankilic\Pinbot\Helpers\Cookies;
-use seregazhuk\tests\Helpers\ResponseHelper;
-use seregazhuk\tests\Helpers\ReflectionHelper;
+use Kaankilic\Pinbot\Tests\Helpers\ResponseHelper;
+use Kaankilic\Pinbot\Tests\Helpers\ReflectionHelper;
 use Kaankilic\Pinbot\Api\CurlHttpClient;
 use Kaankilic\Pinbot\Api\Contracts\HttpClient;
 
