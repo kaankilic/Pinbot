@@ -2,12 +2,11 @@
 
 namespace Kaankilic\Pinbot\Api\Providers\Core;
 
-use function seregazhuk\class_uses_recursive;
+use Kaankilic\Pinbot\Helpers\RecursiveHelper;
 use Kaankilic\Pinbot\Api\Request;
 use Kaankilic\Pinbot\Api\Response;
 use Kaankilic\Pinbot\Helpers\Pagination;
 use Kaankilic\Pinbot\Api\ProvidersContainer;
-use function seregazhuk\trait_uses_recursive;
 
 /**
  * Class Provider.
@@ -125,7 +124,7 @@ abstract class Provider
     {
         $loginRequired = [];
 
-        foreach(class_parents($this) + class_uses_recursive($this) as $trait) {
+        foreach(class_parents($this) + RecursiveHelper::class_uses_recursive($this) as $trait) {
             $class = basename(str_replace('\\', '/', $trait));
 
             if(method_exists($trait, $method = 'requiresLoginFor' . $class)) {
