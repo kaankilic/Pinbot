@@ -3,7 +3,7 @@
 namespace seregazhuk\tests\Bot\Helpers;
 
 use PHPUnit\Framework\TestCase;
-use seregazhuk\PinterestBot\Api\Forms\Profile;
+use Kaankilic\Pinbot\Api\Forms\Profile;
 
 class FormTest extends TestCase
 {

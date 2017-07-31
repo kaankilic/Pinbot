@@ -3,8 +3,8 @@
 namespace seregazhuk\tests\Bot;
 
 use PHPUnit\Framework\TestCase;
-use seregazhuk\PinterestBot\Api\Traits\SendsMessages;
-use seregazhuk\PinterestBot\Exceptions\InvalidRequest;
+use Kaankilic\Pinbot\Api\Traits\SendsMessages;
+use Kaankilic\Pinbot\Exceptions\InvalidRequest;
 
 /**
  * Class RequestTest.

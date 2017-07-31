@@ -4,7 +4,7 @@ namespace seregazhuk\tests\Bot\Helpers;
 
 use PHPUnit_Framework_TestCase;
 use seregazhuk\tests\Helpers\CookiesHelper;
-use seregazhuk\PinterestBot\Helpers\Cookies;
+use Kaankilic\Pinbot\Helpers\Cookies;
 
 class CookiesTest extends PHPUnit_Framework_TestCase
 {

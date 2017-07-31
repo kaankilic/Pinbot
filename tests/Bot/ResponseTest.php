@@ -3,7 +3,7 @@
 namespace seregazhuk\tests\Bot;
 
 use PHPUnit\Framework\TestCase;
-use seregazhuk\PinterestBot\Api\Response;
+use Kaankilic\Pinbot\Api\Response;
 use seregazhuk\tests\Helpers\ResponseHelper;
 
 /**

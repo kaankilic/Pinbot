@@ -5,13 +5,13 @@ namespace seregazhuk\tests\Bot;
 use Mockery;
 use Mockery\MockInterface;
 use PHPUnit\Framework\TestCase;
-use seregazhuk\PinterestBot\Api\Request;
+use Kaankilic\Pinbot\Api\Request;
 use seregazhuk\tests\Helpers\CookiesHelper;
-use seregazhuk\PinterestBot\Helpers\Cookies;
+use Kaankilic\Pinbot\Helpers\Cookies;
 use seregazhuk\tests\Helpers\ResponseHelper;
 use seregazhuk\tests\Helpers\ReflectionHelper;
-use seregazhuk\PinterestBot\Api\CurlHttpClient;
-use seregazhuk\PinterestBot\Api\Contracts\HttpClient;
+use Kaankilic\Pinbot\Api\CurlHttpClient;
+use Kaankilic\Pinbot\Api\Contracts\HttpClient;
 
 /**
  * Class RequestTest.
@@ -63,7 +63,7 @@ class RequestTest extends TestCase
 
     /**
      * @test
-     * @expectedException \seregazhuk\PinterestBot\Exceptions\InvalidRequest
+     * @expectedException \Kaankilic\Pinbot\Exceptions\InvalidRequest
      */
     public function it_should_throw_exception_uploading_file_that_does_not_exist()
     {

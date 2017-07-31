@@ -4,11 +4,11 @@ namespace seregazhuk\tests\Bot\Api;
 
 use Mockery;
 use PHPUnit\Framework\TestCase;
-use seregazhuk\PinterestBot\Api\Request;
-use seregazhuk\PinterestBot\Api\Response;
+use Kaankilic\Pinbot\Api\Request;
+use Kaankilic\Pinbot\Api\Response;
 use seregazhuk\tests\Helpers\ResponseHelper;
-use seregazhuk\PinterestBot\Api\ProvidersContainer;
-use seregazhuk\PinterestBot\Api\Providers\Core\Provider;
+use Kaankilic\Pinbot\Api\ProvidersContainer;
+use Kaankilic\Pinbot\Api\Providers\Core\Provider;
 
 /**
  * Class ProviderTest.
@@ -149,7 +149,7 @@ class DummyProvider extends Provider {
     /**
      * @param mixed $data
      * @param string $resourceUrl
-     * @return \seregazhuk\PinterestBot\Helpers\Pagination
+     * @return \Kaankilic\Pinbot\Helpers\Pagination
      */
     public function dummyPaginate($data, $resourceUrl)
     {

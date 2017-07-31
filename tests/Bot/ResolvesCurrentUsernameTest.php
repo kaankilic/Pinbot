@@ -4,11 +4,11 @@ namespace seregazhuk\tests\Bot\Api;
 
 use Mockery;
 use PHPUnit\Framework\TestCase;
-use seregazhuk\PinterestBot\Api\Request;
-use seregazhuk\PinterestBot\Api\Response;
-use seregazhuk\PinterestBot\Api\ProvidersContainer;
-use seregazhuk\PinterestBot\Api\Providers\Core\Provider;
-use seregazhuk\PinterestBot\Api\Traits\ResolvesCurrentUsername;
+use Kaankilic\Pinbot\Api\Request;
+use Kaankilic\Pinbot\Api\Response;
+use Kaankilic\Pinbot\Api\ProvidersContainer;
+use Kaankilic\Pinbot\Api\Providers\Core\Provider;
+use Kaankilic\Pinbot\Api\Traits\ResolvesCurrentUsername;
 
 /**
  * Class ProviderTest.

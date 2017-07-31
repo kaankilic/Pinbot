@@ -3,7 +3,7 @@
 namespace seregazhuk\tests\Helpers;
 
 use Mockery;
-use seregazhuk\PinterestBot\Api\Contracts\HttpClient;
+use Kaankilic\Pinbot\Api\Contracts\HttpClient;
 
 trait CookiesHelper
 {

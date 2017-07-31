@@ -4,8 +4,8 @@ namespace seregazhuk\tests\Bot;
 
 use PHPUnit\Framework\TestCase;
 use seregazhuk\tests\Helpers\CookiesHelper;
-use seregazhuk\PinterestBot\Helpers\Cookies;
-use seregazhuk\PinterestBot\Api\CurlHttpClient;
+use Kaankilic\Pinbot\Helpers\Cookies;
+use Kaankilic\Pinbot\Api\CurlHttpClient;
 
 /**
  * Class CurlHttpClientTest.

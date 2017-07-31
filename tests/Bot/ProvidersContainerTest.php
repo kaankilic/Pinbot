@@ -5,13 +5,13 @@ namespace seregazhuk\tests\Bot;
 use Mockery;
 use Mockery\MockInterface;
 use PHPUnit\Framework\TestCase;
-use seregazhuk\PinterestBot\Api\Request;
-use seregazhuk\PinterestBot\Api\Response;
-use seregazhuk\PinterestBot\Helpers\Cookies;
-use seregazhuk\PinterestBot\Api\CurlHttpClient;
-use seregazhuk\PinterestBot\Api\ProvidersContainer;
-use seregazhuk\PinterestBot\Api\Contracts\HttpClient;
-use seregazhuk\PinterestBot\Api\Providers\Core\ProviderWrapper;
+use Kaankilic\Pinbot\Api\Request;
+use Kaankilic\Pinbot\Api\Response;
+use Kaankilic\Pinbot\Helpers\Cookies;
+use Kaankilic\Pinbot\Api\CurlHttpClient;
+use Kaankilic\Pinbot\Api\ProvidersContainer;
+use Kaankilic\Pinbot\Api\Contracts\HttpClient;
+use Kaankilic\Pinbot\Api\Providers\Core\ProviderWrapper;
 
 /**
  * Class ProvidersContainerTest.
@@ -57,7 +57,7 @@ class ProvidersContainerTest extends TestCase
 
     /**
      * @test
-     * @expectedException \seregazhuk\PinterestBot\Exceptions\WrongProvider
+     * @expectedException \Kaankilic\Pinbot\Exceptions\WrongProvider
      */
     public function it_should_throw_exception_on_getting_wrong_provider()
     {
