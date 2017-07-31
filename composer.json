@@ -1,6 +1,6 @@
 {
-	"name":"kaankilic/serverup",
-	"description":"Server Uptime Checker Tool",
+	"name":"kaankilic/pinbot",
+	"description":"Pinterest wrapper for Laravel 5.x",
 	"license":"MIT",
 	"authors":[
 		{
