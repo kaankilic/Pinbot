@@ -1,10 +1,10 @@
 <?php
 
-namespace seregazhuk\tests\Bot;
+namespace Kaankilic\Pinbot\Tests\Bot;
 
 use PHPUnit\Framework\TestCase;
 use Kaankilic\Pinbot\Api\Response;
-use seregazhuk\tests\Helpers\ResponseHelper;
+use Kaankilic\Pinbot\Tests\Helpers\ResponseHelper;
 use Kaankilic\Pinbot\Helpers\Pagination;
 
 /**
