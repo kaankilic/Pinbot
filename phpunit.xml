@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+>
+    <testsuites>
+        <testsuite name="Pinterest PHP Bot Test Suite">
+            <directory suffix=".php">./tests/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src/</directory>
+            <exclude>
+                <directory>./src/Api/Providers/Forms</directory>
+                <file>./src/Api/Providers/Core/EntityProvider.php</file>
+                <file>./src/Api/Providers/Topics.php</file>
+                <file>./src/Api/Providers/Boards.php</file>
+                <file>./src/Api/Providers/Comments.php</file>
+                <file>./src/Api/Providers/Inbox.php</file>
+                <file>./src/Api/Providers/Pins.php</file>
+                <file>./src/Api/Providers/Pinners.php</file>
+                <file>./src/Api/Providers/Password.php</file>
+                <file>./src/Api/Providers/Interests.php</file>
+                <file>./src/Api/Providers/User.php</file>
+                <file>./src/Api/Providers/Auth.php</file>
+                <file>./src/Api/Providers/Keywords.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-clover" target="./build/logs/clover.xml"/>
+        <log type="coverage-html" target="./build/logs/report" charset="UTF-8"
+             yui="true" highlight="true"
+             lowUpperBound="50" highLowerBound="80"/>
+    </logging>
+</phpunit>
