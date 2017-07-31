@@ -2,7 +2,7 @@
 
 namespace Kaankilic\Pinbot\Api;
 
-use function seregazhuk\get_array_data;
+use Kaankilic\Pinbot\Helpers\RecursiveHelper;
 use Kaankilic\Pinbot\Api\Contracts\PaginatedResponse;
 
 class Response implements PaginatedResponse
@@ -72,7 +72,7 @@ class Response implements PaginatedResponse
      */
     public function getData($key = '', $default = null)
     {
-        return get_array_data($key, $this->data, $default);
+        return RecursiveHelper::get_array_data($key, $this->data, $default);
     }
 
     /**
@@ -81,7 +81,7 @@ class Response implements PaginatedResponse
      */
     public function hasData($key = '')
     {
-        return !is_null(get_array_data($key, $this->data));
+        return !is_null(RecursiveHelper::get_array_data($key, $this->data));
     }
 
     /**
@@ -93,12 +93,12 @@ class Response implements PaginatedResponse
      */
     protected function parseResponseData($key)
     {
-        $responseData = get_array_data('resource_response.data', $this->data);
+        $responseData = RecursiveHelper::get_array_data('resource_response.data', $this->data);
 
         if (!$responseData) return false;
 
         return $key ?
-            get_array_data($key, $responseData) :
+            RecursiveHelper::get_array_data($key, $responseData) :
             $responseData;
     }
 
@@ -211,7 +211,7 @@ class Response implements PaginatedResponse
 
     protected function fillError()
     {
-        $error = get_array_data('resource_response.error', $this->data);
+        $error = RecursiveHelper::get_array_data('resource_response.error', $this->data);
 
         if ($error) $this->lastError = $error;
 
@@ -220,7 +220,7 @@ class Response implements PaginatedResponse
 
     protected function fillClientInfo()
     {
-        $this->clientInfo = get_array_data('client_context', $this->data);
+        $this->clientInfo = RecursiveHelper::get_array_data('client_context', $this->data);
 
         return $this;
     }
