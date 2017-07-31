@@ -2,7 +2,7 @@
 namespace Kaankilic\Pinbot\Providers;
 use Illuminate\Support\ServiceProvider;
 
-class ServerUpServiceProvider extends ServiceProvider {
+class PinbotServiceProvider extends ServiceProvider {
 	protected $defer = false;
 
 	public function boot(\Illuminate\Routing\Router $router){
