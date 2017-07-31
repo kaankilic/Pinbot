@@ -10,4 +10,4 @@ Please follow the guidelines below when creating an issue so that your issue can
 
 ## Contribute to the project
 
-Pull requests to [seregazhuk/php-pinterest-bot](../../) are always welcome. :+1:
+Pull requests to [kaankilic/pinbot](../../) are always welcome. :+1:
