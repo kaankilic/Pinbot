@@ -36,7 +36,7 @@ use Kaankilic\Pinbot\Api\Providers\Core\ProviderWrapper;
  */
 class ProvidersContainer
 {
-    const PROVIDERS_NAMESPACE = 'seregazhuk\\PinterestBot\\Api\\Providers\\';
+    const PROVIDERS_NAMESPACE = 'Kaankilic\\Pinbot\\Api\\Providers\\';
 
     /**
      * References to the request that travels
