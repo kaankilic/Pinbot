@@ -49,7 +49,7 @@ After that, you need to register the facade.
 ```php
 'aliases' => array(
     ...
-    'ServerUp'=> Kaankilic\Pinbot\Facades\ServerUp::class,
+    'Pinbot'=> Kaankilic\Pinbot\Facades\Pinbot::class,
 )
 ```
 
