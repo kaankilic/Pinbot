@@ -1,4 +1,4 @@
-Easy to use wrapper for the Pinterest API works well with Laravel Framework.This Laravel package will help you to work with your Pinterest account using any account credentials. This library forked and inspired from seregazhuk/php-pinterest-bot.
+Easy to use wrapper for the Pinterest API works well with Laravel Framework.This Laravel package will help you to work with your Pinterest account using any account credentials. This library forked and inspired from [seregazhuk/php-pinterest-bot](https://github.com/seregazhuk/php-pinterest-bot).
 
 If you have any problem with package or found any bug in package, feel free to contact me.
 
@@ -33,31 +33,33 @@ If you have any problem with package or found any bug in package, feel free to c
 Library requires CURL extension and PHP 5.5.9 or above.
 
 Install via [Composer](http://getcomposer.org):
-```
+```bash
 composer require kaankilic/pinbot
 ```
 
+When the package downloaded by composer successfuly, you need to register Pinbot package to your application. You need to add the following statements to your `config/app.php` file.
+```php
+'providers' => array(
+    ...
+    Kaankilic\Pinbot\Providers\PinbotServiceProvider::class,
+)
+```
+
+After that, you need to register the facade.
+```php
+'aliases' => array(
+    ...
+    'ServerUp'=> Kaankilic\Pinbot\Facades\ServerUp::class,
+)
+```
+
 ## Quick Start
-
+Once you installed the Pinbot successfuly, it's ready to use it on anywhere. 
 ```php 
-// You may need to amend this path to locate Composer's autoloader
-require('vendor/autoload.php'); 
-
-use seregazhuk\PinterestBot\Factories\PinterestBot;
-
-$bot = PinterestBot::create();
-
-// Login
+use Pinbot;
+$Pinterest = Pinbot::create();
 $bot->auth->login('mypinterestlogin', 'mypinterestpassword');
-
-// Get lists of your boards
-$boards = $bot->boards->forUser('yourUserName');
-
-// Create a pin
-$bot->pins->create('http://exmaple.com/image.jpg', $boards[0]['id'], 'Pin description');
-
-// Wait 5 seconds
-$bot->wait(5);
+$boards = $bot->boards->forMe(); //returns the boards of logged user.
 ```
 
 *Note*: Some methods use pinterest navigation through results (with bookmarks), for example, get user followers/following, pins
@@ -67,15 +69,6 @@ request to Pinterest. These methods return a [Pagination](#pagination) object wi
 **How to avoid banned from Pinterest**: don't bee too aggressive making pins or writing comments.
 Try to put some timeouts with `$bot->wait($seconds)` calls, so you will behave like a real person and not a bot,
 creating hundreds of pins in a minute.
-
-## Examples
-Here you can find articles with some examples of the most common tasks that can be done with the bot:
-
- - [Automate pinning](http://seregazhuk.github.io/2017/03/25/build-pinterest-bot-with-php-auto-pin/) ([source code](examples/auto_pins.php))
- - [Multiple Accounts and Proxy](http://seregazhuk.github.io/2017/03/28/build-printerest-bot-with-php-multiple-accounts/) ([source code](examples/multiple_accounts_and_proxy.php))
- - [Comments, Likes And Repins](http://seregazhuk.github.io/2017/03/30/build-pinterest-bot-with-php-comments-and-repins/) ([source code](examples/comments_likes_repins.php))
- - [Followers](http://seregazhuk.github.io/2017/04/01/build-pinterest-bit-with-php-followers/) ([source code](examples/followers.php))
- - [Parsing Pins](http://seregazhuk.github.io/2017/04/04/build-pinterest-bot-with-php-parsing-pins/) ([source code](examples/pins_parser.php))
 
 ## Account
 
